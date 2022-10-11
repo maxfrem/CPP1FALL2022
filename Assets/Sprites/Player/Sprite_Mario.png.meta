@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk1
+      name: Idle
       rect:
         serializedVersion: 2
         x: 3
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk2
+      name: Walk1
       rect:
         serializedVersion: 2
         x: 20
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk3
+      name: Walk2
       rect:
         serializedVersion: 2
         x: 37
@@ -1410,6 +1410,7 @@ TextureImporter:
     nameFileIdTable:
       Sprite_Mario_19: -1750052824
       Sprite_Mario_29: 276683970
+      Idle: 1162561975
       Sprite_Mario_27: -1932375348
       Sprite_Mario_23: -1760984433
       Sprite_Mario_6: 1000338828
@@ -1424,7 +1425,7 @@ TextureImporter:
       Sprite_Mario_3: -2130884770
       Sprite_Mario_37: -1397533654
       Sprite_Mario_44: 1219858512
-      Walk2: 1031061487
+      Walk2: 36498579
       Sprite_Mario_52: -1974095911
       Sprite_Mario_11: -712023198
       Fire1: 1730366776
@@ -1442,7 +1443,6 @@ TextureImporter:
       Fire2: -1590821726
       Sprite_Mario_20: -699503323
       Sprite_Mario_26: -1340245173
-      Walk3: 36498579
       Sprite_Mario_5: -1316896664
       Sprite_Mario_15: -2073123410
       Sprite_Mario_17: 1948141587
@@ -1468,7 +1468,7 @@ TextureImporter:
       Sprite_Mario_7: 2084386183
       Fire3: 79256872
       Sprite_Mario_16: 2121415037
-      Walk1: 1162561975
+      Walk1: 1031061487
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
