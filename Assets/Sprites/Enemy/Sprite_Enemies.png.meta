@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1944,7 +1944,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_87
+      name: Player_Projectile
       rect:
         serializedVersion: 2
         x: 79
@@ -14468,7 +14468,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14489,7 +14489,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14510,7 +14510,7 @@ TextureImporter:
         width: 4
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14531,7 +14531,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14590,21 +14590,22 @@ TextureImporter:
       Sprite_Enemies_227: -421828145
       Sprite_Enemies_606: -141352429
       Sprite_Enemies_49: -231533302
-      Sprite_Enemies_135: 677468571
       Sprite_Enemies_527: 181203661
-      Sprite_Enemies_239: 1279545691
       Sprite_Enemies_582: 1666430953
+      Sprite_Enemies_135: 677468571
       Sprite_Enemies_670: -14787397
       Sprite_Enemies_195: 1384297809
       Sprite_Enemies_310: 884608754
-      Sprite_Enemies_602: 2122539001
+      Sprite_Enemies_239: 1279545691
       Sprite_Enemies_482: 172356201
+      Sprite_Enemies_602: 2122539001
       Sprite_Enemies_654: -1190824275
       Sprite_Enemies_591: 458050975
       Sprite_Enemies_653: -1533801733
       Sprite_Enemies_193: -1182663667
       Sprite_Enemies_544: 1362980385
       Sprite_Enemies_669: -340595143
+      Player_Projectile: 1213147541
       Sprite_Enemies_439: -1914127745
       Sprite_Enemies_615: -712627088
       Sprite_Enemies_652: 1665814373
@@ -14714,8 +14715,8 @@ TextureImporter:
       Sprite_Enemies_11: -1571506287
       Sprite_Enemies_574: -1812499671
       Sprite_Enemies_53: -1203811339
-      Sprite_Enemies_312: -378949257
       Sprite_Enemies_592: -1105494439
+      Sprite_Enemies_312: -378949257
       Sprite_Enemies_534: 260535705
       GoombaWalk2: 161964518
       Sprite_Enemies_216: 683354716
@@ -14762,8 +14763,8 @@ TextureImporter:
       Sprite_Enemies_514: 2094980894
       Sprite_Enemies_164: -914236683
       Sprite_Enemies_45: -1040366943
-      Sprite_Enemies_373: -596894483
       Sprite_Enemies_404: 1136699413
+      Sprite_Enemies_373: -596894483
       Sprite_Enemies_610: 42731086
       Sprite_Enemies_519: 1200973010
       Sprite_Enemies_535: 289352772
@@ -14805,8 +14806,8 @@ TextureImporter:
       Sprite_Enemies_596: -1610459833
       Sprite_Enemies_635: -317541732
       Sprite_Enemies_75: 1202736495
-      Sprite_Enemies_332: -152884523
       Sprite_Enemies_487: 1432623735
+      Sprite_Enemies_332: -152884523
       Sprite_Enemies_571: -1069718770
       Sprite_Enemies_643: 1419279196
       Sprite_Enemies_124: -1771333444
@@ -14820,7 +14821,6 @@ TextureImporter:
       Sprite_Enemies_46: -772747457
       Sprite_Enemies_147: 1442097991
       Sprite_Enemies_679: 1281598671
-      Sprite_Enemies_87: 1213147541
       Sprite_Enemies_72: 1427094173
       Sprite_Enemies_63: 214703782
       Sprite_Enemies_197: -1359223379
@@ -14858,8 +14858,8 @@ TextureImporter:
       Sprite_Enemies_245: -1588427257
       Sprite_Enemies_74: 651091748
       Sprite_Enemies_500: 1492585667
-      Sprite_Enemies_398: 2072921176
       Sprite_Enemies_465: -1336057853
+      Sprite_Enemies_398: 2072921176
       Sprite_Enemies_65: 638675738
       Sprite_Enemies_646: 1443583686
       Sprite_Enemies_485: 1518122420
@@ -14891,9 +14891,9 @@ TextureImporter:
       Sprite_Enemies_270: -1439152224
       Sprite_Enemies_353: -1359071662
       Sprite_Enemies_523: 502523043
+      Sprite_Enemies_403: -1595970605
       Sprite_Enemies_564: 582579785
       Sprite_Enemies_678: -247839599
-      Sprite_Enemies_403: -1595970605
       Sprite_Enemies_171: -520577184
       Sprite_Enemies_236: -2079047480
       Sprite_Enemies_376: 1057309694
@@ -15083,11 +15083,11 @@ TextureImporter:
       Sprite_Enemies_212: 1260749283
       Sprite_Enemies_205: -2095468609
       Sprite_Enemies_36: 1743285768
-      Sprite_Enemies_104: 2096455468
-      Sprite_Enemies_278: -1429735121
-      Sprite_Enemies_157: -447935995
       Sprite_Enemies_453: -41539628
+      Sprite_Enemies_278: -1429735121
       Sprite_Enemies_430: 1648500796
+      Sprite_Enemies_157: -447935995
+      Sprite_Enemies_104: 2096455468
       Sprite_Enemies_95: -399697684
       Sprite_Enemies_20: -2146557485
       Sprite_Enemies_605: 948153021
@@ -15146,9 +15146,9 @@ TextureImporter:
       Sprite_Enemies_196: -1686163829
       Sprite_Enemies_397: 379570071
       Sprite_Enemies_381: -1965428323
+      Sprite_Enemies_434: 28480016
       Sprite_Enemies_99: 1960393461
       Sprite_Enemies_0: 898336288
-      Sprite_Enemies_434: 28480016
       Sprite_Enemies_683: 1031561017
       Sprite_Enemies_317: 337006148
       Sprite_Enemies_415: -965197534
@@ -15165,9 +15165,9 @@ TextureImporter:
       Sprite_Enemies_608: 1664884121
       Sprite_Enemies_639: -1413397400
       Sprite_Enemies_59: -740643717
-      Sprite_Enemies_64: -1223216389
       Sprite_Enemies_88: 1230228592
       Sprite_Enemies_361: 1273776271
+      Sprite_Enemies_64: -1223216389
       Sprite_Enemies_491: 2091167279
       Sprite_Enemies_300: -1080560204
       Sprite_Enemies_201: 956321241
@@ -15191,12 +15191,12 @@ TextureImporter:
       Sprite_Enemies_443: -1748734673
       Sprite_Enemies_80: 226211425
       Sprite_Enemies_127: -1416489873
-      Sprite_Enemies_342: 1176162074
-      Sprite_Enemies_101: -898288236
-      Sprite_Enemies_320: 1942106392
       Sprite_Enemies_614: 1579890837
-      Sprite_Enemies_194: -1481123920
+      Sprite_Enemies_101: -898288236
+      Sprite_Enemies_342: 1176162074
       Sprite_Enemies_634: -485206643
+      Sprite_Enemies_320: 1942106392
+      Sprite_Enemies_194: -1481123920
       Sprite_Enemies_133: 813294859
       Sprite_Enemies_77: 628199425
       Sprite_Enemies_118: 148371061
