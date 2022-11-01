@@ -13,15 +13,16 @@ public class Projectile : MonoBehaviour
     void Start()
     {
        if (lifetime <= 0)
-            lifetime = 2.0f;
+            lifetime = 1.0f;
 
         GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
         Destroy(gameObject, lifetime); 
     }
 
     // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.tag == "Wall")
+            Destroy(gameObject);
     }
 }

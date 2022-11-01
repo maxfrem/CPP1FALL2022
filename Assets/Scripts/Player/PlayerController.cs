@@ -14,18 +14,54 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jumpForce;
 
-    //Attack Stuff
-    
-    
     //grounc checking
     public bool isGrounded;
     public Transform GroundCheck;
     public LayerMask isgGroundLayer;
     public float GroundCheckRadius;
 
-    public PlayerController()
+    //variables
+    Coroutine jumpForceChange;
+    public int maxLives = 5;
+    private int _lives = 3;
+    public int lives 
     {
+        get { return _lives; }
+        set
+        {
+            _lives = value;
+            if(_lives > maxLives)
+            _lives  = maxLives;
+            Debug.Log("Lives have been set to:" + _lives.ToString());
+        }
     }
+
+    public void StartJumpForceChange()
+        {
+            if (jumpForceChange == null)
+            {
+               jumpForceChange = StartCoroutine(JumpForceChange()); 
+            }
+            else
+            {
+                StopCoroutine(jumpForceChange);
+                jumpForceChange = null;
+                jumpForce /= 2;
+                jumpForceChange = StartCoroutine(JumpForceChange());
+            }
+        }
+    
+    IEnumerator JumpForceChange()
+    {
+        jumpForce *= 2;
+
+        yield return new WaitForSeconds(5.0f);
+        
+        jumpForce /= 2;
+        jumpForceChange = null;
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
         if (jumpForce <= 0)
         {
-            jumpForce = 300;
+            jumpForce = 350;
         }
 
         if (!GroundCheck)
@@ -60,6 +96,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         AnimatorClipInfo [] curPlayingClip = anim.GetCurrentAnimatorClipInfo(0);
+        
         float hInput = Input.GetAxisRaw("Horizontal");
 
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, isgGroundLayer);

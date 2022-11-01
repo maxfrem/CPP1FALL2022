@@ -28,7 +28,13 @@ public class Shoot : MonoBehaviour
     {
         if (!sr.flipX)
         {
-            Projectile curProjectile = Instantiate(projectilePrefab, spawnPointRight.position,)
+            Projectile curProjectile = Instantiate(projectilePrefab, spawnPointRight.position, spawnPointRight.rotation);
+            curProjectile.speed = projectileSpeed;
+        }
+        else
+        {
+            Projectile curProjectile = Instantiate(projectilePrefab,spawnPointLeft.position, spawnPointLeft.rotation);
+            curProjectile.speed = -projectileSpeed;
         }
     }
 }
