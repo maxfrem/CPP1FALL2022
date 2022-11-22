@@ -2406,7 +2406,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_109
+      name: EnemyProjectile
       rect:
         serializedVersion: 2
         x: 383
@@ -14697,7 +14697,6 @@ TextureImporter:
       Sprite_Enemies_573: -1208609176
       Sprite_Enemies_184: 796956557
       Sprite_Enemies_321: -334139445
-      Sprite_Enemies_109: 1354302497
       Sprite_Enemies_360: -1051417160
       Sprite_Enemies_450: 1202222475
       Sprite_Enemies_657: -1518524527
@@ -14710,6 +14709,7 @@ TextureImporter:
       Sprite_Enemies_640: 162186939
       Sprite_Enemies_576: -1852477877
       Sprite_Enemies_410: 1305623420
+      EnemyProjectile: 1354302497
       Sprite_Enemies_435: 2040385975
       Sprite_Enemies_496: -637837914
       Sprite_Enemies_11: -1571506287

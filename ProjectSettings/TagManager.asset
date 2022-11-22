@@ -6,6 +6,9 @@ TagManager:
   tags:
   - GroundCheck
   - Wall
+  - Squish
+  - Enemy
+  - Range
   layers:
   - Default
   - TransparentFX
